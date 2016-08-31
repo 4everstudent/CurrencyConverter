@@ -9,8 +9,57 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="a4everstudent.currencyconverter.MainActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"
+        android:src="@drawable/money_sand"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/currency2convert"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/image"
+        android:layout_alignEnd="@+id/image" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="€"
+        android:id="@+id/currency1_symbol"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="40dp"
+        android:layout_toRightOf="@+id/currency2convert"
+        android:textIsSelectable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="converted"
+        android:id="@+id/converted_currency"
+        android:layout_below="@+id/currency2convert"
+        android:layout_alignLeft="@+id/currency2convert"
+        android:layout_alignStart="@+id/currency2convert"
+        android:layout_alignRight="@+id/currency2convert"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="$"
+        android:id="@+id/currency2_symbol"
+        android:textSize="40dp"
+        android:layout_below="@+id/currency2convert"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/converted_currency" />
 </RelativeLayout>

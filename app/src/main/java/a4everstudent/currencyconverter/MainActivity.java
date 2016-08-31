@@ -5,6 +5,10 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
+//    TODO: change number field to decimal
+//    TODO: add function to convert
+//    TODO: make the currencies choosable - adding function for all
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
